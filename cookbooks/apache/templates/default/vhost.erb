@@ -1,0 +1,6 @@
+<VirtualHost *:80>
+ServerName <%= node[:app][:server_name] %>
+DocumentRoot /var/www/<%= node[:app][:server_name] %>
+ErrorLog <%= node[:app][:err_path] %>
+CustomLog <%= node[:app][:acc_path] %> combined
+</VirtualHost>
