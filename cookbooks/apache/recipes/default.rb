@@ -28,6 +28,3 @@ end
 service "apache2" do
 	action :restart
 end
-
-
-#parkhi 9422986256
